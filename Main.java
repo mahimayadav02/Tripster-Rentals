@@ -16,6 +16,7 @@ class Car {
         this.basePricePerDay = basePricePerDay;
         this.isAvailable = true;
     }
+
     public String getCarId() {
         return carId;
     }
@@ -87,12 +88,12 @@ class Rental {
     }
 }
 
-class CarRentalSystem {
+class TripsterRentals {
     private List<Car> cars;
     private List<Customer> customers;
     private List<Rental> rentals;
 
-    public CarRentalSystem() {
+    public TripsterRentals() {
         cars = new ArrayList<>();
         customers = new ArrayList<>();
         rentals = new ArrayList<>();
@@ -110,7 +111,6 @@ class CarRentalSystem {
         if (car.isAvailable()) {
             car.rent();
             rentals.add(new Rental(car, customer, days));
-
         } else {
             System.out.println("Car is not available for rent.");
         }
@@ -127,7 +127,6 @@ class CarRentalSystem {
         }
         if (rentalToRemove != null) {
             rentals.remove(rentalToRemove);
-
         } else {
             System.out.println("Car was not rented.");
         }
@@ -137,7 +136,7 @@ class CarRentalSystem {
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
-            System.out.println("===== Car Rental System =====");
+            System.out.println("===== Tripster Rentals =====");
             System.out.println("1. Rent a Car");
             System.out.println("2. Return a Car");
             System.out.println("3. Exit");
@@ -235,15 +234,15 @@ class CarRentalSystem {
             }
         }
 
-        System.out.println("\nThank you for using the Car Rental System!");
+        System.out.println("\nThank you for using Tripster Rentals!");
     }
-
 }
-public class Main{
-    public static void main(String[] args) {
-        CarRentalSystem rentalSystem = new CarRentalSystem();
 
-        Car car1 = new Car("C001", "Toyota", "Camry", 60.0); // Different base price per day for each car
+public class Main {
+    public static void main(String[] args) {
+        TripsterRentals rentalSystem = new TripsterRentals();
+
+        Car car1 = new Car("C001", "Toyota", "Camry", 60.0);
         Car car2 = new Car("C002", "Honda", "Accord", 70.0);
         Car car3 = new Car("C003", "Mahindra", "Thar", 150.0);
         rentalSystem.addCar(car1);
