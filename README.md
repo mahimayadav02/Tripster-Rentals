@@ -1,29 +1,17 @@
-# 🚗 Car Rental System
+# Tripster Rentals
 
-Explore the world of car rentals with the **Car Rental System**, a Java-based console application that combines learning and simulation. 🌟
+Tripster Rentals is a simple Java-based car rental management system built using Object-Oriented Programming (OOP) concepts. It allows customers to view available cars, rent them, and return them, while keeping track of rental history and availability — all in the console.
 
-## Features
+Features:
+View Available Cars — Lists all cars currently available for rent.
+Rent a Car — Allows customers to book a car by entering its ID.
+Return a Car — Marks the rented car as returned and available again.
+Rental History — Tracks and displays customer rental details during the session.
+Exit System — Ends the session safely.
 
-🚀 Rent a Car: Experience the ease of renting cars through an interactive console.
-🔁 Return a Car: Effortlessly return previously rented cars and update availability.
-👥 Customer Management: Add new customers and maintain customer records.
-🚗 Car Management: Manage cars, brands, models, and pricing details.
-📝 Rental History: Keep track of rentals, customers, and rental durations.
 
-## Getting Started
-
-1. **Clone the Repo**: `git clone https://github.com/prabhatthakuryt/Car-Rental-System.git`
-
-## Contributions Welcome! 🎉
-
-Contribute to the project's growth. Open issues, submit pull requests, and collaborate with the community.
-
-## Future Roadmap 🛤️
-
-🤝 Support multiple customers renting the same car simultaneously.
-⏰ Implement date-based pricing adjustments.
-🎨 Develop a graphical user interface (GUI) for enhanced user experience.
-
----
-
-Feel the thrill of renting and returning cars while mastering OOP concepts. Dive into the Car Rental System and drive your learning forward! 🚗💨
+OOP Concepts Used
+Classes and Objects — To represent Cars, Customers, and the Rental Service.
+Encapsulation — Data hiding using private fields and public methods.
+Constructors — For initializing objects.
+Collections — Using Java's ArrayList to store data in memory.
